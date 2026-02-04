@@ -1,10 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+html, body{
 
+width: 100%;
+overflow-x: hidden;
+}
+header {
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 .container{
     width: min(90%, 1120px);
@@ -243,7 +253,6 @@ background-color: white;
 /* MIDIG */
 .right {
   
-  f
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -254,7 +263,7 @@ background-color: white;
 }
 .phone{
     position: relative;
-    right:  40px;
+    right:  5px;
 }
 .phone p{
    font-size: 1.2rem;
@@ -330,16 +339,16 @@ button {
     font-size: 1.1rem;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .mytable th,
 .mytable td {
   border: 1px solid black;
   padding: 50px;
-  justify-content: center;
-  text-align: center;
   position: relative;
-  left: 120px;
+    left: 120px;
+  
 }
 
 .mytable th{
@@ -394,32 +403,33 @@ color: #7a7a7a;
 }
 
 .contact-section {
-  padding: 60px 0;
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+margin-top: 100px;
 }
 
 .contact-wrapper {
-  width: 90%;
-  margin: ;
+  width: 300%;
+  margin-top: ;
   display: flex;
 }
 
-/* MAP */
 .map {
   width: 100%;
-  height: 80%;
-
+  height: 10%;
 }
 
 .map iframe {
-  width: 140%;
-  height: 450px;
+  width: 180%;
+  height: 499px;
   border: 0;
 }
 
-/* FORM */
+
 .form-area {
     background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg);
-  width: 130%;
+  width: 350%;
   position: relative;
   left: 150px;
   display: flex;
@@ -429,17 +439,18 @@ color: #7a7a7a;
 
 form {
   background: #fff;
-  padding: 40px;
+  padding: 60px;
   width: 90%;
 }
 
-.row {
+ .row {
   display: flex;
   gap: 15px;
-}
 
+}
 .row input {
   width: 100%;
+ 
 }
 
 input, textarea {
@@ -461,400 +472,167 @@ button {
   padding: 12px 25px;
   cursor: pointer;
 }
-footer{
+footer {
     padding: 30px;
     justify-content: center;
     text-align: center;
+
 }
 
-/* ==================== MOBILE & TABLET RESPONSIVE ==================== */
-
-/* TABLET (768px iyo ka hoose) */
-@media (max-width: 768px) {
-    body {
-        font-size: 13px;
-    }
-    
-    /* HEADER */
-    .tan-labaad {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        padding: 15px;
-    }
-    
-    .info {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .info li a {
-        margin: 8px 15px;
-    }
-    
-    /* HERO SECTION */
-    .muna {
-        height: 80vh;
-    }
-    
-    .hero {
-        margin-top: 200px;
-    }
-    
-    #dhan {
-        font-size: 4rem;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .hero p {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    
-    /* FEATURES BOXES */
-    .boxs {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 50px;
-    }
-    
-    .box {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .box img {
-        width: 70px;
-        margin: 0 auto;
-    }
-    
-    /* TRAINING CLASSES SECTION */
-    .section {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 60px;
-    }
-    
-    .left {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .card {
-        width: 45%;
-        min-width: 200px;
-        margin: 0 auto;
-    }
-    
-    .card img {
-        width: 30%;
-    }
-    
-    .right {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .right img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
-    
-    .phone {
-        position: static;
-        text-align: center;
-        margin: 20px 0;
-    }
-    
-    .btn3 {
-        width: 100%;
-        max-width: 300px;
-        padding: 20px;
-    }
-    
-    /* SCHEDULE SECTION */
-    .xxl {
-        height: auto;
-        min-height: 100vh;
-        padding: 40px 15px;
-        flex-direction: column;
-    }
-    
-    .xxl h2 {
-        padding: 15px;
-        font-size: 1.5rem;
-    }
-    
-    #my {
-        flex-direction: column;
-        gap: 5px;
-        margin-top: 30px;
-    }
-    
-    #my span {
-        font-size: 2.5rem;
-    }
-    
-    #my .x {
-        font-size: 3rem;
-    }
-    
-    .xx p {
-        padding: 15px;
-        font-size: 1rem;
-    }
-    
-    /* TABLE */
-    .mytable {
-        overflow-x: auto;
-        margin: 20px 0;
-    }
-    
-    .mytable th,
-    .mytable td {
-        padding: 15px 10px;
-        font-size: 12px;
-    }
-    
-    /* TRAINERS SECTION */
-    .ali {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .abdi {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    /* CONTACT SECTION */
-    .contact-wrapper {
-        flex-direction: column;
-        width: 95%;
-        margin: 0 auto;
-    }
-    
-    .map {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .map iframe {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .form-area {
-        width: 100%;
-        position: static;
-        margin-top: 30px;
-    }
-    
-    form {
-        width: 100%;
-        padding: 25px;
-    }
-    
-    .row {
-        flex-direction: column;
-        gap: 0;
-    }
+.hamburger{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 180%;
 }
 
-/* MOBILE (576px iyo ka hoose) */
-@media (max-width: 576px) {
-    /* HEADER */
-    .tan-labaad {
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    background-color: #2b2b37;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid white;
+}
+@media(max-width: 768px){
+    
+    header{
+        height: 0;
+    }
+    
+    .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #5f6ad4;
+    color: white;
+    width: 50px;
+    height: 50px;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    z-index: 10000;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: #2b2b2b;
+    inset: 0;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+  }
+
+  .mobile-menu[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .hamburger i[data-visible="true"] {
+    display: block;
+  }
+
+  .hamburger i[data-visible="false"] {
+    display: none;
+  }
+  .mobile-menu .navigation {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mobile-menu .menus-link {
+    flex-direction: column;
+    gap: 1.2rem;
+    list-style: none;
+  }
+   .mobile-menu a {
+    color: white;
+    text-decoration: none;
+  }
+    .boxs{
+        display: flex;
         flex-direction: column;
     }
-    
-    .info {
+    .nimco{
+        height: 50vh;
+    }
+    .section{
+        width: 80%;
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    
-    .info li a {
-        display: block;
-        margin: 10px 0;
-        padding: 8px 15px;
+    .right{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        right: 10%;
+        top: auto;
     }
-    
-    /* HERO */
-    .muna {
+    .phone{
+        position: relative;
+        left: 80px;
+        top: 0;
+    }
+    .mytable{
+        width: 100%;
         height: 70vh;
     }
-    
-    .hero {
-        margin-top: 150px;
-    }
-    
-    #dhan {
-        font-size: 3rem;
-    }
-    
-    .hero p {
-        font-size: 1.2rem;
-    }
-    
-    /* BUTTONS */
-    .btn, .btn2, .btn3 {
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-    
-    /* FEATURES */
-    .yoga {
-        margin-top: 80px;
-    }
-    
-    .boxs {
-        margin-top: 30px;
-    }
-    
-    /* TRAINING CARDS */
-    .left {
-        gap: 15px;
-    }
-    
-    .card {
-        width: 90%;
-        min-width: unset;
-    }
-    
-    .card h1 {
-        font-size: 1.1rem;
-    }
-    
-    /* SCHEDULE SECTION */
-    #my span {
-        font-size: 2rem;
-    }
-    
-    #my .x {
-        font-size: 2.5rem;
-    }
-    
-    .xx img {
-        width: 40px;
-    }
-    
-    /* TABLE */
     .mytable th,
-    .mytable td {
-        padding: 10px 5px;
-        font-size: 11px;
-    }
+.mytable td{
     
-    /* NIMCO SECTION */
-    .nimco {
-        height: 30vh;
-    }
-    
-    .amiir {
-        margin-top: 40px;
-    }
-    
-    .amiir span {
-        font-size: 2rem;
-    }
-    
-    /* CONTACT */
-    form {
-        padding: 20px 15px;
-    }
+    padding: 10px;
+  position: relative;
+    left: 3%;
+}
+.ali{
+    display: flex;
+    flex-direction: column;
+}
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+  }  
+    .contact-wrapper {
+    width: 100%;
+  }
+  .row{
+   
+  }
+  .form-area{
+   width: 100%;
+  position: relative;
+  left: 0px;
+  display: flex;
+  margin-inline:auto ;
+  }
+  .map{
+
+  }
+
+  .row{
+    color: #ed563b;
+  }
 }
 
-/* SMALL MOBILE (375px iyo ka hoose) */
-@media (max-width: 375px) {
-    #dhan {
-        font-size: 2.5rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-    
-    .card {
-        width: 100%;
-    }
-    
-    #my span {
-        font-size: 1.8rem;
-    }
-    
-    #my .x {
-        font-size: 2rem;
-    }
-    
-    .xx p {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-    
-    .btn, .btn2, .btn3 {
-        padding: 10px 15px;
-        font-size: 0.85rem;
-    }
-}
-
-/* HAMBURGER MENU FOR MOBILE */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
-        z-index: 1000;
-    }
-    
-    .info {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(53, 49, 49, 0.95);
-        padding: 20px;
-        z-index: 999;
-    }
-    
-    .info.active {
-        display: flex;
-    }
-    
-    .info li a {
-        color: white;
-        padding: 15px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-}
-
-/* LANDSCAPE MODE */
-@media (max-height: 600px) and (orientation: landscape) {
-    .muna {
-        height: 100vh;
-    }
-    
-    .hero {
-        margin-top: 100px;
-    }
-    
-    #dhan {
-        font-size: 3rem;
-    }
-}
+   
